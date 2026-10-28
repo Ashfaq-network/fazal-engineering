@@ -1,0 +1,252 @@
+/* Responsive Styles */
+
+@media (max-width: 1200px) {
+    .about-container {
+        gap: 3rem;
+    }
+    
+    .about-badge {
+        right: -1rem;
+    }
+    
+    .footer-top {
+        grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 968px) {
+    .nav-toggle {
+        display: block;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        flex-direction: column;
+        background: rgba(10, 10, 10, 0.98);
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        transition: 0.3s;
+        gap: 2rem;
+        padding-top: 5rem;
+        justify-content: flex-start;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-item {
+        margin: 0;
+    }
+    
+    .nav-link {
+        font-size: 1.2rem;
+    }
+    
+    .nav-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .nav-toggle.active span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+    
+    .nav-toggle.active span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+    
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .about-badge {
+        right: 2rem;
+        bottom: 2rem;
+    }
+    
+    .about-image-wrapper {
+        height: 400px;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-card,
+    .project-card.large {
+        grid-column: span 1;
+        height: 350px;
+    }
+    
+    .testimonial-card {
+        min-width: calc(50% - 1rem);
+    }
+    
+    .stats-container {
+        flex-direction: column;
+    }
+    
+    .stat-divider {
+        display: none;
+    }
+    
+    .footer-top {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        cursor: auto;
+    }
+    
+    .cursor,
+    .cursor-follower {
+        display: none;
+    }
+    
+    .hero-content {
+        padding: 0 1.5rem;
+    }
+    
+    .hero-title {
+        font-size: clamp(2rem, 10vw, 4rem);
+    }
+    
+    .title-line {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .hero-buttons .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+        padding: 0 1.5rem;
+    }
+    
+    .section-header {
+        padding: 0 1.5rem;
+    }
+    
+    .section-title {
+        font-size: clamp(1.8rem, 8vw, 2.8rem);
+    }
+    
+    .about-container {
+        padding: 0 1.5rem;
+    }
+    
+    .about-features {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-badge {
+        position: relative;
+        right: auto;
+        bottom: auto;
+        margin-top: 2rem;
+        display: inline-block;
+    }
+    
+    .projects-grid {
+        padding: 0 1.5rem;
+    }
+    
+    .testimonials-slider {
+        padding: 0 1.5rem;
+    }
+    
+    .testimonial-card {
+        min-width: 100%;
+    }
+    
+    .cta-content {
+        padding: 0 1.5rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .cta-buttons .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .footer-container {
+        padding: 0 1.5rem;
+    }
+    
+    .nav-container {
+        padding: 0 1.5rem;
+    }
+    
+    .preloader-logo .logo-text {
+        font-size: 2rem;
+    }
+    
+    .preloader-logo .logo-sub {
+        font-size: 0.7rem;
+        letter-spacing: 0.6em;
+    }
+    
+    .preloader-bar {
+        width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        padding: 5rem 0;
+    }
+    
+    .hero-subtitle span {
+        font-size: 0.7rem;
+        letter-spacing: 0.3em;
+    }
+    
+    .service-content {
+        padding: 1.5rem;
+    }
+    
+    .project-overlay {
+        padding: 1.5rem;
+    }
+    
+    .project-title {
+        font-size: 1.4rem;
+    }
+    
+    .testimonial-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .back-to-top {
+        bottom: 1rem;
+        right: 1rem;
+        width: 45px;
+        height: 45px;
+    }
+}
