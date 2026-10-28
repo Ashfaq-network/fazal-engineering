@@ -117,8 +117,13 @@
         display: none;
     }
     
+    .hero {
+        height: 100svh;
+    }
+    
     .hero-content {
         padding: 0 1.5rem;
+        padding-top: 5rem;
     }
     
     .hero-title {
@@ -133,11 +138,23 @@
     .hero-buttons {
         flex-direction: column;
         width: 100%;
+        gap: 1rem;
+        margin-bottom: 4rem;
     }
     
     .hero-buttons .btn {
         width: 100%;
         justify-content: center;
+        padding: 0.875rem 2rem;
+    }
+    
+    .hero-scroll {
+        bottom: 1rem;
+        font-size: 0.7rem;
+    }
+    
+    .scroll-line {
+        height: 40px;
     }
     
     .services-grid {
@@ -222,9 +239,26 @@
         padding: 5rem 0;
     }
     
+    .hero {
+        height: 100svh;
+    }
+    
+    .hero-content {
+        padding-top: 4.5rem;
+    }
+    
     .hero-subtitle span {
-        font-size: 0.7rem;
-        letter-spacing: 0.3em;
+        font-size: 0.65rem;
+        letter-spacing: 0.25em;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .hero-buttons {
+        margin-bottom: 5rem;
     }
     
     .service-content {

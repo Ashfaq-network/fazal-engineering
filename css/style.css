@@ -442,7 +442,7 @@ body {
 
 .hero-scroll {
     position: absolute;
-    bottom: 3rem;
+    bottom: 2rem;
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
@@ -451,12 +451,13 @@ body {
     align-items: center;
     gap: 0.75rem;
     color: var(--text-secondary);
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     animation: fadeIn 1s ease forwards;
     animation-delay: 1.5s;
     opacity: 0;
+    pointer-events: none;
 }
 
 .scroll-line {
