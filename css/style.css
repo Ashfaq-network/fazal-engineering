@@ -157,6 +157,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 1rem;
     width: 100%;
     box-sizing: border-box;
     position: relative;
@@ -195,17 +196,19 @@ body {
     background: transparent;
     border: none;
     cursor: pointer;
-    padding: 0.5rem;
-    z-index: 1001;
+    padding: 0;
+    z-index: 10001;
     position: relative;
+    width: 44px;
+    height: 44px;
 }
 
 .nav-toggle span {
     display: block;
-    width: 25px;
+    width: 22px;
     height: 2px;
     background: var(--text-primary);
-    margin: 5px 0;
+    margin: 4px auto;
     transition: var(--transition-fast);
 }
 
