@@ -4,9 +4,16 @@ document.addEventListener('DOMContentLoaded', function() {
     // Preloader
     const preloader = document.querySelector('.preloader');
     if (preloader) {
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                preloader.classList.add('hidden');
+            }, 800);
+        });
         setTimeout(() => {
-            preloader.classList.add('hidden');
-        }, 1500);
+            if (preloader && !preloader.classList.contains('hidden')) {
+                preloader.classList.add('hidden');
+            }
+        }, 2500);
     }
     
     
