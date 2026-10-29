@@ -1265,31 +1265,6 @@ section {
     box-shadow: 0 15px 40px rgba(37, 211, 102, 0.6);
 }
 
-/* Call Float */
-.call-float {
-    position: fixed;
-    bottom: 8rem;
-    left: 2rem;
-    width: 55px;
-    height: 55px;
-    background: var(--gradient-primary);
-    color: #0b1026;
-    border-radius: 50%;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.6rem;
-    text-decoration: none;
-    z-index: 999;
-    box-shadow: 0 10px 30px var(--accent-glow);
-    transition: var(--transition-medium);
-}
-
-.call-float:hover {
-    transform: scale(1.1);
-    box-shadow: 0 15px 40px var(--accent-glow);
-}
-
 /* Back to Top */
 .back-to-top {
     position: fixed;
