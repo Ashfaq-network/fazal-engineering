@@ -16,14 +16,15 @@
 }
 
 @media (max-width: 968px) {
-    html, body {
-        overflow-x: hidden !important;
-        max-width: 100vw;
+    html {
+        overflow-x: hidden;
         width: 100%;
     }
     
-    * {
-        max-width: 100vw;
+    body {
+        overflow-x: hidden;
+        width: 100%;
+        position: relative;
     }
     
     .navbar {
@@ -32,7 +33,7 @@
     }
     
     .nav-container {
-        padding: 0 0.875rem;
+        padding: 0 1rem;
         width: 100%;
         max-width: 100%;
         position: relative;
@@ -45,36 +46,35 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 48px;
-        height: 48px;
+        width: 44px;
+        height: 44px;
         position: relative;
-        z-index: 100001;
+        z-index: 100002;
         background: var(--card-bg);
-        border: 1px solid var(--accent-color);
+        border: 1px solid var(--border-color);
         flex-shrink: 0;
         border-radius: 4px;
     }
     
     .nav-menu {
-        position: absolute !important;
-        left: 0 !important;
-        top: 100% !important;
+        position: absolute;
+        left: 0;
+        top: 100%;
         flex-direction: column;
-        background: #0b1026 !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        height: auto !important;
-        max-height: calc(100vh - 70px);
-        text-align: center;
-        transition: all 0.3s ease;
+        background: #0b1026;
+        width: 100%;
+        height: auto;
+        max-height: 80vh;
+        text-align: left;
+        transition: all 0.25s ease;
         gap: 0;
         padding: 0;
         justify-content: flex-start;
         align-items: stretch;
         box-sizing: border-box;
         overflow-y: auto;
-        z-index: 100000 !important;
-        margin: 0 !important;
+        z-index: 100001;
+        margin: 0;
         border-top: 1px solid var(--border-color);
         border-bottom: 1px solid var(--border-color);
         display: none;
@@ -90,11 +90,15 @@
         border-bottom: 1px solid rgba(42, 53, 85, 0.5);
     }
     
+    .nav-item:last-child {
+        border-bottom: none;
+    }
+    
     .nav-link {
         font-size: 0.95rem;
         display: block;
         width: 100%;
-        padding: 1rem 1.5rem;
+        padding: 0.875rem 1.25rem;
         text-align: left;
     }
     
@@ -105,15 +109,17 @@
     .nav-item-cta {
         margin-top: 0;
         width: 100%;
-        padding: 1rem 1.5rem;
+        padding: 0.875rem 1.25rem;
+        border-bottom: none;
     }
     
     .nav-cta {
-        padding: 0.875rem 1.5rem;
+        padding: 0.75rem 1.25rem;
         font-size: 0.85rem;
         width: 100%;
         text-align: center;
         box-sizing: border-box;
+        display: block;
     }
     
     .nav-toggle.active span:nth-child(2) {
@@ -177,10 +183,13 @@
 }
 
 @media (max-width: 768px) {
-    html, body {
-        overflow-x: hidden !important;
-        max-width: 100vw;
-        width: 100%;
+    html {
+        overflow-x: hidden;
+    }
+    
+    body {
+        overflow-x: hidden;
+        position: relative;
     }
     
     body {
@@ -348,9 +357,13 @@
 }
 
 @media (max-width: 480px) {
-    html, body {
-        overflow-x: hidden !important;
-        max-width: 100vw;
+    html {
+        overflow-x: hidden;
+    }
+    
+    body {
+        overflow-x: hidden;
+        position: relative;
     }
     
     section {
