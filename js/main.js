@@ -29,9 +29,16 @@ document.addEventListener('DOMContentLoaded', function() {
         navToggle.addEventListener('click', (e) => {
             e.preventDefault();
             e.stopPropagation();
-            navToggle.classList.toggle('active');
-            navMenu.classList.toggle('active');
-            document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
+            const isOpen = navMenu.classList.contains('active');
+            if (isOpen) {
+                navToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+                document.body.style.overflow = '';
+            } else {
+                navToggle.classList.add('active');
+                navMenu.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
         });
     }
     
