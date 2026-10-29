@@ -4,16 +4,17 @@ document.addEventListener('DOMContentLoaded', function() {
     // Preloader
     const preloader = document.querySelector('.preloader');
     if (preloader) {
-        window.addEventListener('load', () => {
-            setTimeout(() => {
-                preloader.classList.add('hidden');
-            }, 800);
-        });
-        setTimeout(() => {
-            if (preloader && !preloader.classList.contains('hidden')) {
-                preloader.classList.add('hidden');
-            }
-        }, 2500);
+        const hidePreloader = () => {
+            preloader.classList.add('hidden');
+        };
+        if (document.readyState === 'complete') {
+            setTimeout(hidePreloader, 500);
+        } else {
+            window.addEventListener('load', () => {
+                setTimeout(hidePreloader, 600);
+            });
+        }
+        setTimeout(hidePreloader, 2000);
     }
     
     
