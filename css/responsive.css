@@ -31,7 +31,7 @@
     }
     
     .nav-container {
-        padding: 0 1rem;
+        padding: 0 0.875rem;
         width: 100%;
         max-width: 100%;
         position: relative;
@@ -43,13 +43,14 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 44px;
-        height: 44px;
+        width: 48px;
+        height: 48px;
         position: relative;
         z-index: 10001;
-        background: rgba(255,255,255,0.05);
-        border: 1px solid var(--border-color);
+        background: var(--card-bg);
+        border: 1px solid var(--accent-color);
         flex-shrink: 0;
+        border-radius: 4px;
     }
     
     .nav-menu {

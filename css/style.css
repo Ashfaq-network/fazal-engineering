@@ -199,13 +199,13 @@ body {
     padding: 0;
     z-index: 10001;
     position: relative;
-    width: 44px;
-    height: 44px;
+    width: 48px;
+    height: 48px;
 }
 
 .nav-toggle span {
     display: block;
-    width: 22px;
+    width: 24px;
     height: 2px;
     background: var(--text-primary);
     margin: 4px auto;
