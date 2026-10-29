@@ -6,20 +6,20 @@
 }
 
 :root {
-    --primary-bg: #000000;
-    --secondary-bg: #0a0a0a;
-    --tertiary-bg: #111111;
-    --card-bg: #141414;
-    --accent-color: #000000;
-    --accent-hover: #1a1a1a;
-    --accent-glow: rgba(0, 0, 0, 0.6);
+    --primary-bg: #0b1026;
+    --secondary-bg: #10182a;
+    --tertiary-bg: #16213e;
+    --card-bg: #1a2238;
+    --accent-color: #d4af37;
+    --accent-hover: #f1c40f;
+    --accent-glow: rgba(212, 175, 55, 0.4);
     --text-primary: #ffffff;
-    --text-secondary: #d0d0d0;
-    --text-tertiary: #a0a0a0;
-    --border-color: #252525;
-    --border-accent: rgba(255, 255, 255, 0.3);
-    --gradient-primary: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
-    --gradient-dark: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.95) 100%);
+    --text-secondary: #c9d1e3;
+    --text-tertiary: #8a93b3;
+    --border-color: #2a3555;
+    --border-accent: rgba(212, 175, 55, 0.6);
+    --gradient-primary: linear-gradient(135deg, #d4af37 0%, #b8860b 100%);
+    --gradient-dark: linear-gradient(180deg, rgba(11, 16, 38, 0) 0%, rgba(11, 16, 38, 0.95) 100%);
     
     --font-primary: 'Exo 2', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     --font-display: 'Tourney', 'Exo 2', sans-serif;
@@ -237,8 +237,8 @@ body {
 
 .nav-cta {
     text-decoration: none;
-    color: #000000;
-    background: #ffffff;
+    color: #0b1026;
+    background: var(--gradient-primary);
     padding: 0.75rem 1.75rem;
     font-size: 0.9rem;
     font-weight: 700;
@@ -257,7 +257,7 @@ body {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.1), transparent);
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
     transition: var(--transition-slow);
 }
 
@@ -266,9 +266,8 @@ body {
 }
 
 .nav-cta:hover {
-    box-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 30px var(--accent-glow);
     transform: translateY(-2px);
-    background: #f0f0f0;
 }
 
 /* Hero Section */
@@ -405,8 +404,8 @@ body {
 }
 
 .btn-primary {
-    background: #ffffff;
-    color: #000000;
+    background: var(--gradient-primary);
+    color: #0b1026;
     font-weight: 700;
 }
 
@@ -417,7 +416,7 @@ body {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.1), transparent);
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
     transition: var(--transition-slow);
 }
 
@@ -426,9 +425,8 @@ body {
 }
 
 .btn-primary:hover {
-    box-shadow: 0 10px 40px rgba(255, 255, 255, 0.4);
+    box-shadow: 0 10px 40px var(--accent-glow);
     transform: translateY(-3px);
-    background: #f0f0f0;
 }
 
 .btn-secondary {
@@ -438,8 +436,8 @@ body {
 }
 
 .btn-secondary:hover {
-    border-color: #ffffff;
-    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--accent-color);
+    background: rgba(212, 175, 55, 0.12);
     transform: translateY(-3px);
 }
 
@@ -564,8 +562,8 @@ section {
 
 .service-card:hover {
     transform: translateY(-10px);
-    border-color: rgba(255, 255, 255, 0.4);
-    box-shadow: 0 20px 60px rgba(255, 255, 255, 0.15);
+    border-color: var(--border-accent);
+    box-shadow: 0 20px 60px rgba(212, 175, 55, 0.25);
 }
 
 .service-image {
@@ -605,13 +603,13 @@ section {
     left: 2rem;
     width: 60px;
     height: 60px;
-    background: #ffffff;
-    color: #000000;
+    background: var(--gradient-primary);
+    color: #0b1026;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
-    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 30px var(--accent-glow);
 }
 
 .service-title {
