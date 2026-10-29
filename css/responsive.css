@@ -21,14 +21,22 @@
         max-width: 100%;
     }
     
+    .navbar {
+        z-index: 1002;
+    }
+    
     .nav-container {
         padding: 0 1.25rem;
         width: 100%;
         max-width: 100%;
+        position: relative;
+        z-index: 1002;
     }
     
     .nav-toggle {
         display: block;
+        position: relative;
+        z-index: 1003;
     }
     
     .nav-menu {
@@ -36,17 +44,19 @@
         left: -100%;
         top: 0;
         flex-direction: column;
-        background: rgba(11, 16, 38, 0.99);
-        width: 100%;
-        max-width: 100vw;
+        background: #0b1026;
+        width: 100vw;
+        height: 100vh;
         height: 100dvh;
         text-align: center;
-        transition: 0.3s ease;
-        gap: 1.5rem;
-        padding-top: 6rem;
+        transition: left 0.35s ease;
+        gap: 1.25rem;
+        padding: 7rem 1.5rem 3rem;
         justify-content: flex-start;
+        align-items: center;
         box-sizing: border-box;
         overflow-y: auto;
+        z-index: 1001;
     }
     
     .nav-menu.active {
